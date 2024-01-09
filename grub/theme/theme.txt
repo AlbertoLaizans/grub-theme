@@ -1,5 +1,3 @@
-# Steons:Gate Threme
-
 desktop-color: "#000000"
 desktop-image-scale-method: "padding"
 desktop-image: "background.png"
