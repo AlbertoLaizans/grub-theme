@@ -8,10 +8,12 @@ The initial installation of `nohashduck/grub` can be done by typing the followin
 ```bash
 git clone https://github.com/nohashduck/grub.git
 sudo cp -r grub/grub/theme /usr/share/grub/themes/grub
-sudo sed -i "s/GRUB_THEME=.*/GRUB_THEME=\/usr\/share\/grub\/themes\/grub/theme.txt" /etc/default/grub
+sudo sed -i "s/GRUB_THEME=.*/GRUB_THEME=\/usr\/share\/grub\/themes\/grub\/theme.txt/" /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 If you want to do all of this at once, we can chain the commands like so:
 ```bash
-git clone https://github.com/nohashduck/grub.git && sudo cp -r grub/grub/theme /usr/share/grub/themes/grub && sudo sed -i "s/GRUB_THEME=.*/GRUB_THEME=\/usr\/share\/grub\/themes\/grub/theme.txt" /etc/default/grub && sudo grub-mkconfig -o /boot/grub/grub.cfg
+git clone https://github.com/AlbertoLaizans/grub-theme.git && sudo cp -r grub/grub/theme /usr/share/grub/themes/grub && sudo sed -i "s/GRUB_THEME=.*/GRUB_THEME=\/usr\/share\/grub\/themes\/grub\/theme.txt/" /etc/default/grub
+ /etc/default/grub && sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
+Note: sed command fixed from the original post
